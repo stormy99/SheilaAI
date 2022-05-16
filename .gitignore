@@ -1,0 +1,35 @@
+# Cache
+__pycache__/
+__pypackages__/
+# Package
+.Python
+build/
+dist/
+downloads/
+lib64/
+sdist/
+var/
+wheels/
+share/python-wheels/
+# Flask
+instance/
+.webassets-cache
+# Jupyter
+.ipynb_checkpoints
+# Env
+.idea
+idea/
+.venv
+venv/
+# Model
+*.model
+*.tflite
+*.cc
+*.h5
+logs
+# datasets
+/devel/preprocess/data.json
+/dataset/google
+/dataset/librispeech
+/dataset/mozilla
+/dataset/timit
