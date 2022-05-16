@@ -1,0 +1,16 @@
+model building:
+======================
+pip install -r requirements.txt
+
+
+model conversion:
+=======================
+sudo apt-get instal xxd
+xxd -i converted_quant_model.tflite > model.cc
+
+
+wit.ai testing:
+=======================
+curl -XPOST -H 'Authorization: Bearer H6LNUQNAGQ5EYFHYXPXSVURSHNWYZQ3P' -H "Content-Type: audio/wav" "https://api.wit.ai/speech?v=220201015" --data-binary "@audio_name.wav"
+
+
